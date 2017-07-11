@@ -3,8 +3,7 @@ http://codingdojo.org/kata/Greed/
 http://en.wikipedia.org/wiki/Greed_%28dice_game%29
 
 Greed (Dice Game)
-
-Write a class Greed with a score() method that accepts an array of die values (up to 6). Scoring rules are as follows:
+`index.php` is the main file where the input can be modified or provided. Right now a proper interface is missing to provide input data.
 
 - A single one (100)
 - A single five (50)

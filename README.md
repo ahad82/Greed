@@ -5,6 +5,13 @@ http://en.wikipedia.org/wiki/Greed_%28dice_game%29
 Greed (Dice Game)
 `index.php` is the main file where the input can be modified or provided. Right now a proper interface is missing to provide input data.
 
+## Design
+- For each rule i have defined a class as `Single`, `Pair`, `Tripple` etc, which are all inherited from `BaseScore` class.
+- Factory pattern is used to pick up rules class using `RulesFactory` class
+- `Greed` class is the main controller which is responsible for using the factory and all the required objects.
+
+## Business case/rules
+
 - A single one (100)
 - A single five (50)
 - Triple ones [1,1,1] (1000)

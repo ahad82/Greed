@@ -48,6 +48,9 @@ class Greed {
 	 */
 	private function validate(array $data) {
 		$this->count = count($data);
+		// Returns an array with value as key and their frequency in the input array
+		// Example input array [1, 2, 1, 1, 1]
+		// array_count_values outputs => [1=>4, 2=>1], 1 appeared 4 times, and 2 appeared 1 time, in the input array
 		$this->count_of_same_values = array_count_values($data);
 		if ($this->count == 0 || $this->count > 6) {
 			return false;
